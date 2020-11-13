@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wd5-fv-DOJ" customClass="CustomCellForSearchTrack" customModule="iMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wd5-fv-DOJ" id="9RD-iY-qOn">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T37-cN-DPV">
+                        <rect key="frame" x="15" y="12" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="eEb-Yv-Gja"/>
+                            <constraint firstAttribute="width" constant="60" id="hUL-AT-yOF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумашедшая" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfk-z1-0Lx">
+                        <rect key="frame" x="85" y="13" width="269" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ани Лорак" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmv-yr-dbh">
+                        <rect key="frame" x="85" y="38" width="269" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разве ты любил" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-jS-isG">
+                        <rect key="frame" x="85" y="55.5" width="269" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDg-3l-gu9">
+                        <rect key="frame" x="374" y="34" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="RQh-vm-Osl"/>
+                            <constraint firstAttribute="width" constant="16" id="ef5-ez-y1p"/>
+                        </constraints>
+                        <state key="normal" image="Add"/>
+                        <connections>
+                            <action selector="addAction:" destination="wd5-fv-DOJ" eventType="touchUpInside" id="IAl-0M-wGc"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EDg-3l-gu9" firstAttribute="leading" secondItem="Bmv-yr-dbh" secondAttribute="trailing" constant="20" id="9gC-lz-JCh"/>
+                    <constraint firstItem="Xfk-z1-0Lx" firstAttribute="top" secondItem="T37-cN-DPV" secondAttribute="top" constant="1" id="BTV-Mv-G8f"/>
+                    <constraint firstItem="Xfk-z1-0Lx" firstAttribute="leading" secondItem="T37-cN-DPV" secondAttribute="trailing" constant="10" id="ESj-rw-Z9Y"/>
+                    <constraint firstItem="tgc-jS-isG" firstAttribute="leading" secondItem="T37-cN-DPV" secondAttribute="trailing" constant="10" id="GkB-Mi-xmX"/>
+                    <constraint firstItem="EDg-3l-gu9" firstAttribute="centerY" secondItem="9RD-iY-qOn" secondAttribute="centerY" id="JVc-Df-msk"/>
+                    <constraint firstItem="T37-cN-DPV" firstAttribute="leading" secondItem="9RD-iY-qOn" secondAttribute="leading" constant="15" id="LVH-Fr-TUp"/>
+                    <constraint firstItem="tgc-jS-isG" firstAttribute="top" secondItem="Bmv-yr-dbh" secondAttribute="bottom" constant="3" id="PXJ-WZ-YWm"/>
+                    <constraint firstItem="tgc-jS-isG" firstAttribute="bottom" secondItem="T37-cN-DPV" secondAttribute="bottom" constant="-2" id="g8b-y1-SQt"/>
+                    <constraint firstAttribute="trailing" secondItem="EDg-3l-gu9" secondAttribute="trailing" constant="24" id="gdm-Dc-u8v"/>
+                    <constraint firstItem="Bmv-yr-dbh" firstAttribute="leading" secondItem="T37-cN-DPV" secondAttribute="trailing" constant="10" id="kRD-x5-jrc"/>
+                    <constraint firstItem="EDg-3l-gu9" firstAttribute="leading" secondItem="Xfk-z1-0Lx" secondAttribute="trailing" constant="20" id="oTk-0a-xTg"/>
+                    <constraint firstItem="T37-cN-DPV" firstAttribute="centerY" secondItem="9RD-iY-qOn" secondAttribute="centerY" id="qu8-Lg-s28"/>
+                    <constraint firstItem="EDg-3l-gu9" firstAttribute="leading" secondItem="tgc-jS-isG" secondAttribute="trailing" constant="20" id="x0t-o5-109"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addButtonOutlet" destination="EDg-3l-gu9" id="lzV-2Q-A3j"/>
+                <outlet property="albumNameLabel" destination="tgc-jS-isG" id="OqF-co-3sZ"/>
+                <outlet property="artistNameLabel" destination="Bmv-yr-dbh" id="U9B-id-JAz"/>
+                <outlet property="iconTrack" destination="T37-cN-DPV" id="tuu-hi-zhw"/>
+                <outlet property="trackNameLabel" destination="Xfk-z1-0Lx" id="G36-6K-q2y"/>
+            </connections>
+            <point key="canvasLocation" x="-5.7971014492753632" y="77.34375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Add" width="16" height="16"/>
+    </resources>
+</document>
